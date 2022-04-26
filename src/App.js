@@ -1,10 +1,15 @@
 import "./App.css";
-import HeroSection from "./components/HeroSection";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
 
 function App() {
   return (
     <div className="App">
-      <HeroSection />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="about" element={<About />} />
+      </Routes>
     </div>
   );
 }
