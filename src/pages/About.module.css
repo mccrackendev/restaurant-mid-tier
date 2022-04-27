@@ -1,0 +1,50 @@
+.aboutSection {
+  width: 95%;
+  margin: 5rem auto;
+}
+
+.emphasizedText {
+  font-size: 1.25rem;
+  color: var(--accent-clr);
+}
+
+.aboutSection h2 {
+  margin: 0 auto;
+  font-size: 1.75rem;
+  margin-bottom: 0.25em;
+  width: 90%;
+}
+
+.aboutSectionContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.aboutSectionContentImageWrapper img {
+  width: 100%;
+}
+
+.aboutSectionContentTextWrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1em;
+}
+
+.aboutSectionContentTextWrapper p {
+  letter-spacing: 0.5px;
+  margin: 1em 0;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .aboutSectionContent {
+    grid-template-columns: 1fr;
+  }
+
+  .aboutSectionContentImageWrapper {
+    order: -1;
+  }
+}
