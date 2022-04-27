@@ -1,4 +1,4 @@
-import { galleryImages } from "../data/data";
+import { galleryImages } from "../App";
 import styles from "./Gallery.module.css";
 // Gallery page to highlight photos from the restaurant and provide more marketing depth.
 const Gallery = () => {
