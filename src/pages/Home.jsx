@@ -1,7 +1,7 @@
 import { Fragment } from "react"
 import HeroSection from "../components/HeroSection"
 import Menu from "../components/Menu"
-import { menuData } from "../App";
+import { menuData } from "../App.js"
 
 
 
