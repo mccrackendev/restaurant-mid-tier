@@ -3,10 +3,10 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Gallery from "./pages/Gallery";
-import placeholder from "../assests/brooke-lark-HlNcigvUi4Q-unsplash.jpg";
-import gallery1 from "../assests/jimmy-dean-Yn0l7uwBrpw-unsplash.jpg";
-import gallery2 from "../assests/brooke-lark-HlNcigvUi4Q-unsplash.jpg";
-import gallery3 from "../assests/lily-banse--YHSwy6uqvk-unsplash.jpg";
+import placeholder from "./assests/brooke-lark-HlNcigvUi4Q-unsplash.jpg";
+import gallery1 from "./assests/jimmy-dean-Yn0l7uwBrpw-unsplash.jpg";
+import gallery2 from "./assests/brooke-lark-HlNcigvUi4Q-unsplash.jpg";
+import gallery3 from "./assests/lily-banse--YHSwy6uqvk-unsplash.jpg";
 
 export const menuData = [
   {
