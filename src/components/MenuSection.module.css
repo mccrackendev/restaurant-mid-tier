@@ -1,0 +1,26 @@
+.menuSection {
+    width: 80%;
+    margin: 1em auto;
+}
+
+.menuSection h2 {
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.menuSection h2:hover,
+.menuSection h2:focus {
+    color: var(--accent-clr);
+}
+
+.menuSectionGridWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+}
+
+@media screen and (max-width: 700px) {
+    .menuSectionGridWrapper {
+        grid-template-columns: 1fr;
+    }
+}

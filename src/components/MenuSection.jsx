@@ -1,18 +1,19 @@
-import { Fragment, useState } from "react";
+import { useState } from "react";
 import MenuItem from "./MenuItem";
+import styles from "./MenuSection.module.css";
 
 const MenuSection = (props) => {
   const [showSection, setShowSection] = useState(false);
-  console.log(props);
 
   const showSectionHandler = () => {
     setShowSection(!showSection);
   };
+  const arrowIcon = showSection ? "↑" : "↓";
 
   let content;
   if (showSection) {
     content = (
-      <Fragment>
+      <div className={styles.menuSectionGridWrapper}>
         {props.items.map((item) => (
           <MenuItem
             key={Math.random()}
@@ -23,7 +24,7 @@ const MenuSection = (props) => {
             price={item.price}
           />
         ))}
-      </Fragment>
+      </div>
     );
   }
 
@@ -31,8 +32,10 @@ const MenuSection = (props) => {
     content = null;
   }
   return (
-    <section>
-      <h2 onClick={showSectionHandler}>{props.sectionTitle}</h2>
+    <section className={styles.menuSection} onClick={showSectionHandler}>
+      <h2>
+        {props.sectionTitle} {arrowIcon}
+      </h2>
       <br />
       {content}
     </section>

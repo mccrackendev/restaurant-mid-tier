@@ -1,0 +1,57 @@
+.header {
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "logo dropdown" "nav nav";
+    margin-bottom: 1em;
+}
+
+.titleWrapper {
+    grid-area: logo;
+    padding-left: 1em;
+    display: flex;
+    align-items: flex-end;
+    gap: 0.5em;
+}
+
+.titleWrapper img {
+    margin-top: 1em;
+}
+
+.dropdownWrapper {
+    grid-area: dropdown;
+    padding-right: 1em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.nav {
+    padding: 1em 0;
+    grid-area: nav;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navList {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navListItem a {
+    text-decoration: none;
+    color: var(--seconday-clr);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navListItem a:hover,
+.navListItem a:focus {
+    color: var(--accent-clr);
+}
