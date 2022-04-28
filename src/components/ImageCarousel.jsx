@@ -6,9 +6,14 @@ import image3 from "../assests/lily-banse--YHSwy6uqvk-unsplash.jpg";
 
 const ImageCarousel = () => {
   return (
-    <Carousel autoPlay="true" infiniteLoop="true" showArrows="true" interval={5000}>
+    <Carousel
+      autoPlay="true"
+      infiniteLoop="true"
+      showArrows="true"
+      interval={5000}
+    >
       <div>
-        <img src={image1} alt="food" ></img>
+        <img src={image1} alt="food"></img>
       </div>
       <div>
         <img src={image2} alt="food" loading="lazy"></img>

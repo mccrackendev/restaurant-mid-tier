@@ -10,9 +10,9 @@ const Gallery = () => {
       </div>
       <div className={styles.gallerySectionGalleryWrapper}>
         {galleryImages.map((image) => (
-          <div className={styles.galleryImageWrapper}>
+          <div key={Math.random()} className={styles.galleryImageWrapper}>
             <img
-              key={Math.random()}
+              loading="lazy"
               src={image.src}
               alt={image.alt}
               title={image.alt}
