@@ -7,6 +7,11 @@
     margin-bottom: 1em;
 }
 
+.header a {
+    text-decoration: none;
+    color: var(--seconday-clr);
+}
+
 .titleWrapper {
     grid-area: logo;
     padding-left: 1em;

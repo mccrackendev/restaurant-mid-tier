@@ -30,10 +30,12 @@ const Header = () => {
 
   return (
     <header className={styles.header}>
-      <div className={styles.titleWrapper}>
-        <img src={logo} alt="company logo" height={100} width={100}></img>
-        <h1>Restaurant Mid-tier</h1>
-      </div>
+      <Link to="/">
+        <div className={styles.titleWrapper}>
+          <img src={logo} alt="company logo" height={100} width={100}></img>
+          <h1>Restaurant Mid-tier</h1>
+        </div>
+      </Link>
       <div className={styles.dropdownWrapper}>
         <button onClick={toggleNavHandler}>{toggleContent}</button>
       </div>
